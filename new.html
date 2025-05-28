@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Team – Landing Pagee</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('algorithms', this)">Algorithms</button>
+        <button class="tab-button" onclick="openTab('features', this)">Features</button>
+        <button class="tab-button" onclick="openTab('about', this)">About</button>
+    </div>
+
+    <div id="algorithms" class="tab-content">
+        <h2>Algorithms</h2>
+        <p>Content for the Algorithms tab.</p>
+    </div>
+
+    <div id="features" class="tab-content">
+        <h2>Features</h2>
+        <p>Content for the Features tab.</p>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>About</h2>
+        <p>Content for the About tab.</p>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section min-h-screen flex items-center justify-center text-center p-8">
+        <div>
+          <h1>Take back control over your feed</h1>
+          <p>Reimagining social media experience with innovation and values.</p>
+          <a>Explore Our Idea ↓</a>
+        </div>
+      </section>
+      <section id="concept" class="max-w-4xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">📌 Our Hackathon Idea</h2>
+  
+        <!-- WHY -->
+        <div class="mb-10">
+          <h3 class="text-xl font-semibold mb-2">Why?</h3>
+          <p class="text-gray-700">Explain the pain point or opportunity that inspired your project.</p>
+        </div>
+  
+        <!-- WHAT -->
+        <div class="mb-10">
+    </div>
+
+    <script>
+        function openTab(tabName, element) {
+            // Hide all tab contents
+            let tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Show the selected tab content
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Get all tab buttons
+        let tabButtons = document.getElementsByClassName("tab-button");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+        // Open the first tab by default
+        openTab('algorithms', document.querySelector(".tab-button"));
+    </script>
+
+</body>
+</html>

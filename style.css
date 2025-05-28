@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFBF7;
+    color: #9C79F5;
+}
+
+h1 {
+    color: #9C79F5;
+}
+
+p {
+    color: #666;
+}
+/* Basic styling for the tabs */
+.tabs {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.tab-button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab-button.active {
+    background-color: #9C79F5; /* Change to your desired active color */
+    color: white; /* Change text color if needed */
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
