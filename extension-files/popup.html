@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resocial</title>
+    <link rel="icon" href="docs/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Resocial</h1>
+        <p>Take back control of your feed!</p>
+        <div class="tabs">
+            <button class="tab-button" data-tab="algorithms">Algorithms</button>
+            <button class="tab-button" data-tab="features">Features</button>
+            <button class="tab-button" data-tab="about">About</button>
+        </div>
+    </div>
+
+    <div id="algorithms" class="tab-content">
+        <h2>Algorithms</h2>
+        <p>Content for the Algorithms tab.</p>
+        <input type="checkbox" id="algo1" name="algo1" value="People">
+        <label for="algo1"> People you care about</label><br>
+        <input type="checkbox" id="algo2" name="algo2" value="Positive">
+        <label for="algo2"> Something positive</label><br>
+        <input type="checkbox" id="algo3" name="algo3" value="Politics">
+        <label for="algo3">Politics</label><br>
+    </div>
+
+    <div id="features" class="tab-content">
+        <h2>Features</h2>
+        <input type="checkbox" id="grayscale" name="grayscale" value="gray">
+        <label for="grayscale"> Grayscale</label><br>
+        <input type="checkbox" id="ai" name="ai" value="ai">
+        <label for="ai"> Disable AI</label><br>
+        <input type="checkbox" id="timelimit" name="timelimit" value="timelimit">
+        <label for="timelimit">Timelimit</label><br>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>About</h2>
+        <embed src="concept.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+    <script src="content.js"></script>
+</body>
+</html>
